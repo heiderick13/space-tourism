@@ -1,4 +1,13 @@
+<script>
+import Navbar from "../components/Navbar.vue"
+
+export default {
+  components: {Navbar}
+}
+</script>
+
 <template>
+  <Navbar/>
 
   <div id="techs-carousel">
     <p class="page-title">03 Space launch 101</p>
