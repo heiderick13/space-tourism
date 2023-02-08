@@ -7,8 +7,8 @@ export default {
 </script>
 
 <template>
-  <Navbar />
-  <div id="meet-your-crew">
+  <div id="crew">
+    <Navbar />
 
 
     <p class="crew-title">02 Meet your crew</p>
@@ -61,6 +61,6 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 
 </style>

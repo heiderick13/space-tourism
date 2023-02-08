@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div id="body">
+  <section id="home">
     <Navbar />
 
     <div class="container">
@@ -26,25 +26,10 @@ export default {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
-#body {
-  height: 100vh;
-  background-image: url(../assets/home/background-home-desktop.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
 .container-fluid {
   background-color: transparent;
 }
