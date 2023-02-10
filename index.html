@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+        width: 100vw;
+        color: #fefefe;
+        background-image: url(./src/assets/home/background-home-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <nav>
+        <div class="navbar d-flex py-4 px-5 pe-0">
+          <div class="nav-brand">
+            <img src="./src/assets/shared/logo.svg" alt="logo" />
+          </div>
+          <ul class="nav-links d-flex py-4 px-5">
+            <li class="nav-link">
+              <a href="/" onclick="route()" class="pe-3">home</a>
+            </li>
+            <li class="nav-link">
+              <a href="/destinaions" onclick="route()" class="pe-3"
+                >destination</a
+              >
+            </li>
+            <li class="nav-link">
+              <a href="/crew" onclick="route()" class="pe-3">crew</a>
+            </li>
+            <li class="nav-link">
+              <a href="/technoly" onclick="route()" class="pe-3">technoly</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main id="main-page"></main>
+    </div>
+
+    <script src="./src/router/router.js"></script>
+  </body>
+</html>

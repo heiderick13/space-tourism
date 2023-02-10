@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crew</title>
+    <link rel="stylesheet" href="./src/css/bs-copy.css">
+    <style>
+      body {
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        max-width: 100vw;
+        color: #fefefe;
+        overflow: hidden;
+      }
+
+    
+      #carousel {
+        position: relative;
+        width: 75%;
+        margin: auto;
+        overflow: hidden;
+        scrollbar-width: none;
+      }
+    
+      #carousel-items {
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+      }
+    
+      #carousel::-webkit-scrollbar {
+        display: none;
+      }
+    
+      #carousel i {
+        position: absolute;
+        font-size: 32px;
+        top: 30%;
+        cursor: pointer;
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+    
+      #carousel i:hover {
+        opacity: 1;
+      }
+    
+      #carousel .right {
+        right: 5%;
+      }
+    
+      #carousel .left {
+        left: 0;
+      }
+    
+      .col-md-6 {
+        max-height: 100%;
+      }
+    
+      .item {
+        min-width: 100%;
+        padding: 0.5rem;
+      }
+    
+      .item img {
+        height: 90%;
+        width: 90%;
+      }
+    
+      .item .crew-position,
+      .item .member-name {
+        font-family: "Bellefair", serif;
+        text-transform: uppercase;
+      }
+    
+      .item .crew-position {
+        font-size: 32px;
+        opacity: 0.6;
+      }
+    
+      .item .member-name {
+        font-size: 50px;
+        margin: 1rem 0;
+      }
+    
+      .item .member-description {
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    
+      b {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+
+  <section id="crew">
+    <p class="page-title"><b>02</b> Meet your crew</p>
+
+    <div id="carousel">
+      <i class="bi bi-chevron-left left"></i>
+      <i class="bi bi-chevron-right right"></i>
+
+      <div id="carousel-items" class="d-flex">
+        <div id="commander" class="crew-member item d-flex">
+          <div class="col-md-6 member-text">
+            <p class="crew-position">Commander</p>
+            <p class="member-name">Douglas Hurley</p>
+
+            <p class="member-description">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps
+              pilot and former NASA astronaut. He launched into space for the
+              third time as commander of Crew Dragon Demo-2.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="../assets/crew/image-douglas-hurley.png" alt="" />
+          </div>
+        </div>
+
+        <div id="mission-specialist" class="crew-member item d-flex">
+          <div class="col-md-6 member-text">
+            <p class="crew-position">Mission Specialist</p>
+            <p class="member-name">Mark Shuttleworth</p>
+
+            <p class="member-description">
+              Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+              company behind the Linux-based Ubuntu operating system.
+              Shuttleworth became the first South African to travel to space as
+              a space tourist.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="../assets/crew/image-mark-shuttleworth.png" alt="" />
+          </div>
+        </div>
+
+        <div id="pilot" class="crew-member item d-flex">
+          <div class="col-md-6 member-text">
+            <p class="crew-position">Pilot</p>
+            <p class="member-name">Victor Glover</p>
+
+            <p class="member-description">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to
+              the International Space Station. Glover is a commander in the U.S.
+              Navy where he pilots an F/A-18.He was a crew member of Expedition
+              64, and served as a station systems flight engineer.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="../assets/crew/image-victor-glover.png" alt="" />
+          </div>
+        </div>
+
+        <div id="flight-engineer" class="crew-member item d-flex">
+          <div class="col-md-6 member-text">
+            <p class="crew-position">Flight Engineer</p>
+            <p class="member-name">Anousheh Ansari</p>
+
+            <p class="member-description">
+              Anousheh Ansari is an Iranian American engineer and co-founder of
+              Prodea Systems. Ansari was the fourth self-funded space tourist,
+              the first self-funded woman to fly to the ISS, and the first
+              Iranian in space.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="../assets/crew/image-anousheh-ansari.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</html>
