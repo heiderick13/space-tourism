@@ -1,204 +1,117 @@
-<script>
-  import Navbar from "../components/Navbar.vue";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/technologies.js" defer></script>
+  </head>
+  <body id="techs">
+    <nav class="navbar d-flex py-4 px-5 pe-0">
+      <div class="nav-brand">
+        <img src="../assets/shared/logo.svg" alt="logo" />
+      </div>
+      <ul class="nav-links d-flex py-4 px-5">
+        <li class="nav-link">
+          <a href="../../index.html"> <b class="pe-1">00</b> home</a>
+        </li>
+        <li class="nav-link">
+          <a href="./destinations.html"> <b class="pe-1">01</b> destination</a>
+        </li>
+        <li class="nav-link">
+          <a href="./crew.html"> <b class="pe-1">02</b> crew</a>
+        </li>
+        <li class="nav-link">
+          <a href="#"> <b class="pe-1">03</b> technology</a>
+        </li>
+      </ul>
+    </nav>
 
-  export default {
-    components: { Navbar },
-
-    mounted() {
-      // this.techsCarousel = document.querySelector('#techs-carousel');
-      this.items = document.querySelectorAll(".item");
-      this.controls = document.querySelectorAll(".control");
-      this.maxItems = this.items.length;
-
-      this.currentItem = 0;
-    },
-
-    methods: {
-      slide() {
-        this.controls.forEach((control) => {
-          control.addEventListener("click", () => {
-            this.isLeft = control.classList.contains("left");
-
-            if (this.isLeft) {
-              this.currentItem--;
-            } else {
-              this.currentItem++;
-            }
-
-            if (this.currentItem >= this.maxItems) {
-              this.currentItem = 0;
-            }
-
-            if (this.currentItem < 0) {
-              this.currentItem = this.maxItems - 1;
-            }
-
-            // this.items.forEach(item => {
-            //   item.classList.remove('currentItem');
-            // })
-
-            this.items[this.currentItem].scrollIntoView({
-              inline: "center",
-              behavior: "smooth",
-            });
-
-            // this.items[this.currentItem].classList.add('currentItem');
-          });
-        });
-      },
-    },
-  };
-</script>
-
-<template>
-  <nav class="navbar d-flex py-4 px-5 pe-0">
-    <div class="nav-brand">
-      <img src="../assets/shared/logo.svg" alt="logo" />
-    </div>
-    <ul class="nav-links d-flex py-4 px-5">
-      <li class="nav-link">
-        <a href="../../index.html"> <b class="pe-1">00</b> home</a>
-      </li>
-      <li class="nav-link">
-        <a href="./destinations.html"> <b class="pe-1">01</b> destination</a>
-      </li>
-      <li class="nav-link">
-        <a href="./crew.html"> <b class="pe-1">02</b> crew</a>
-      </li>
-      <li class="nav-link">
-        <a href="#"> <b class="pe-1">03</b> technology</a>
-      </li>
-    </ul>
-  </nav>
-
-  <section id="techs">
     <p class="page-title">03 Space launch 101</p>
-    <div id="techs-carousel" class="d-flex">
-      <div id="indicators">
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
+
+    <section class="d-flex align-items-center justify-content-between">
+      <div id="indicators" class="d-flex flex-column m-auto">
+        <a class="active">1</a>
+        <a>2</a>
+        <a>3</a>
       </div>
+      <div id="techs-carousel" class="d-flex">
+        <i class="bi bi-chevron-left control left"></i>
+        <i class="bi bi-chevron-right control right"></i>
 
-      <button class="bi bi-chevron-left control left"></button>
-      <button class="bi bi-chevron-right control right"></button>
+        <div id="carousel-items" class="d-flex">
+          <div id="launch" class="item d-flex align-items-center">
+            <div class="tech-text">
+              <p class="terminology">The terminology...</p>
+              <div class="tech">Launch vehicle</div>
 
-      <div id="carousel-items" class="d-flex">
-        <div id="launch" class="item currentItem d-flex">
-          <div class="tech-text">
-            <p class="terminology">The terminology...</p>
-            <div class="tech">Launch vehicle</div>
+              <p class="tech-description">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+            <div class="tech-img">
+              <img
+                src="../assets/technology/image-launch-vehicle-portrait.jpg"
+                alt=""
+                height="450"
+              />
+            </div>
+          </div>
+          <div id="spaceport" class="item d-flex align-items-center">
+            <div class="tech-text">
+              <p class="terminology">The terminology...</p>
+              <div class="tech">Spaceport</div>
 
-            <p class="tech-description">
-              A launch vehicle or carrier rocket is a rocket-propelled vehicle
-              used to carry a payload from Earth's surface to space, usually to
-              Earth orbit or beyond. Our WEB-X carrier rocket is the most
-              powerful in operation. Standing 150 metres tall, it's quite an
-              awe-inspiring sight on the launch pad!
-            </p>
+              <p class="tech-description">
+                A spaceport or cosmodrome is a site for launching (or receiving)
+                spacecraft, by analogy to the seaport for ships or airport for
+                aircraft. Based in the famous Cape Canaveral, our spaceport is
+                ideally situated to take advantage of the Earth’s rotation for
+                launch.
+              </p>
+            </div>
+            <div class="tech-img">
+              <img
+                src="../assets/technology/image-spaceport-portrait.jpg"
+                alt=""
+                height="450"
+              />
+            </div>
           </div>
-          <div class="tech-img">
-            <img
-              src="../assets/technology/image-launch-vehicle-portrait.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div id="spaceport" class="item d-flex">
-          <div class="tech-text">
-            <p class="terminology">The terminology...</p>
-            <div class="tech">Spaceport</div>
-
-            <p class="tech-description">
-              A spaceport or cosmodrome is a site for launching (or receiving)
-              spacecraft, by analogy to the seaport for ships or airport for
-              aircraft. Based in the famous Cape Canaveral, our spaceport is
-              ideally situated to take advantage of the Earth’s rotation for
-              launch.
-            </p>
-          </div>
-          <div class="tech-img">
-            <img
-              src="../assets/technology/image-spaceport-portrait.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div id="capsule" class="item d-flex">
-          <p class="terminology">The terminology...</p>
-          <div class="tech">Space Capsule</div>
-          <div class="tech-text">
-            <p class="tech-description">
-              A space capsule is an often-crewed spacecraft that uses a
-              blunt-body reentry capsule to reenter the Earth's atmosphere
-              without wings. Our capsule is where you'll spend your time during
-              the flight. It includes a space gym, cinema, and plenty of other
-              activities to keep you entertained.
-            </p>
-          </div>
-          <div class="tech-img">
-            <img
-              src="../assets/technology/image-space-capsule-portrait.jpg"
-              alt=""
-            />
+          <div id="capsule" class="item d-flex align-items-center">
+            <div class="tech-text">
+              <p class="terminology">The terminology...</p>
+              <div class="tech">Space Capsule</div>
+              <p class="tech-description">
+                A space capsule is an often-crewed spacecraft that uses a
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                without wings. Our capsule is where you'll spend your time
+                during the flight. It includes a space gym, cinema, and plenty
+                of other activities to keep you entertained.
+              </p>
+            </div>
+            <div class="tech-img">
+              <img
+                src="../assets/technology/image-space-capsule-portrait.jpg"
+                alt=""
+                height="450"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</template>
-
-<style scoped>
-  #techs {
-    color: #fefefe;
-  }
-
-  #techs-carousel {
-    width: 80%;
-    height: 80%;
-    overflow-x: auto;
-    margin: auto;
-    scrollbar-width: none;
-  }
-
-  #techs-carousel::-webkit-scrollbar {
-    display: none;
-  }
-
-  #techs-carousel {
-    max-height: 100%;
-  }
-
-  #techs-carousel button {
-    position: absolute;
-    font-size: 32px;
-    top: 30%;
-    color: #fefefe;
-    border: none;
-    cursor: pointer;
-    opacity: 0.3;
-    transition: all 0.3s;
-  }
-
-  #techs-carousel button:hover {
-    opacity: 1;
-  }
-
-  #techs-carousel .right {
-    right: 5%;
-  }
-
-  #carousel-items .left {
-    left: 0;
-  }
-
-  .item {
-    height: 100%;
-    min-width: 100%;
-    justify-content: space-between;
-  }
-
-  .item .tech-img {
-    height: 80%;
-  }
-</style>
+    </section>
+  </body>
+</html>

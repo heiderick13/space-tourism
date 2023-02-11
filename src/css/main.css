@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import url(./destinations.css);
+@import url(./technologies.css);
 
 :root {
   --home-bg: "@/assets/home/background-home-desktop.jpg";
@@ -137,15 +138,6 @@ body {
 
 #home {
   background-image: url(../assets/home/background-home-desktop.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  max-width: 100vw;
-}
-
-#techs {
-  background-image: url(../assets/technology/background-technology-desktop.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
