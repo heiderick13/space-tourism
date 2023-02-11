@@ -83,7 +83,7 @@ body {
 /* HOME */
 
 .container {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .presentation {
@@ -112,7 +112,6 @@ body {
 }
 
 .explore {
-  text-align: center;
   font-family: "Bellefair", serif;
   font-size: 32px;
   text-transform: uppercase;
@@ -126,6 +125,8 @@ body {
 
 .wrapper {
   transition: all 0.3s;
+  margin: auto;
+  text-align: center;
 }
 
 .wrapper:hover {
