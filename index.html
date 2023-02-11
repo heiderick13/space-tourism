@@ -7,47 +7,47 @@
     <title>Space Tourism</title>
     <link rel="stylesheet" href="./src/css/main.css" />
 
-    <style>
-      body {
-        min-height: 100vh;
-        width: 100vw;
-        color: #fefefe;
-        background-image: url(./src/assets/home/background-home-desktop.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-    </style>
   </head>
-  <body>
-    <div id="root">
-      <nav>
-        <div class="navbar d-flex py-4 px-5 pe-0">
-          <div class="nav-brand">
-            <img src="./src/assets/shared/logo.svg" alt="logo" />
-          </div>
-          <ul class="nav-links d-flex py-4 px-5">
-            <li class="nav-link">
-              <a href="/" onclick="route()" class="pe-3">home</a>
-            </li>
-            <li class="nav-link">
-              <a href="/destinaions" onclick="route()" class="pe-3"
-                >destination</a
-              >
-            </li>
-            <li class="nav-link">
-              <a href="/crew" onclick="route()" class="pe-3">crew</a>
-            </li>
-            <li class="nav-link">
-              <a href="/technoly" onclick="route()" class="pe-3">technoly</a>
-            </li>
-          </ul>
+  <body id="home">
+    <nav class="navbar d-flex py-4 px-5 pe-0">
+      <div class="nav-brand">
+          <img src="./src/assets/shared/logo.svg" alt="logo">
+      </div>
+      <ul class="nav-links d-flex py-4 px-5 ">
+          <li class="nav-link">
+              <RouterLink to="/"> <b class="pe-1">00</b> home</RouterLink>
+          </li>
+          <li class="nav-link">
+              <RouterLink to="/destinations"> <b class="pe-1">01</b> destination</RouterLink>
+          </li>
+          <li class="nav-link">
+              <RouterLink to="/crew"> <b class="pe-1">02</b> crew</RouterLink>
+          </li>
+          <li class="nav-link">
+              <RouterLink to="/technologies"> <b class="pe-1">03</b> technology</RouterLink>
+          </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="col-md-6 presentation">
+          <p class="sub-title">So, you want to travel to</p>
+          <h1 class="title">Space</h1>
+          <p class="trip-description">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of
+            it. Well sit back, and relax because we’ll give you a truly out
+            of this world experience!
+          </p>
         </div>
-      </nav>
-
-      <main id="main-page"></main>
+        <div class="col-md-6 wrapper">
+          <a href="/destinations" onclick="route()" class="explore"
+            >Explore</a
+          >
+        </div>
+      </div>
+    </main>
     </div>
-
-    <script src="./src/router/router.js"></script>
   </body>
 </html>
