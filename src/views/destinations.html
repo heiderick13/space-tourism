@@ -1,14 +1,31 @@
 <script>
+  import Navbar from "../components/Navbar.vue";
 
-import Navbar from "../components/Navbar.vue"
-
-export default {
-  components: { Navbar }
-}
-
+  export default {
+    components: { Navbar },
+  };
 </script>
 
 <template>
+  <nav class="navbar d-flex py-4 px-5 pe-0">
+    <div class="nav-brand">
+      <img src="../assets/shared/logo.svg" alt="logo" />
+    </div>
+    <ul class="nav-links d-flex py-4 px-5">
+      <li class="nav-link">
+        <a href="../../index.html"> <b class="pe-1">00</b> home</a>
+      </li>
+      <li class="nav-link">
+        <a href="#"> <b class="pe-1">01</b> destination</a>
+      </li>
+      <li class="nav-link">
+        <a href="./crew.html"> <b class="pe-1">02</b> crew</a>
+      </li>
+      <li class="nav-link">
+        <a href="./technologies.html"> <b class="pe-1">03</b> technology</a>
+      </li>
+    </ul>
+  </nav>
 
   <main>
     <section id="destinations">
@@ -26,14 +43,17 @@ export default {
 
         <div id="carousel-items" class="d-flex">
           <div id="destination-moon" class="item d-flex">
-            <div class="destination-img"><img src="../assets/destination/image-moon.png" alt=""></div>
+            <div class="destination-img">
+              <img src="../assets/destination/image-moon.png" alt="" />
+            </div>
             <div class="destination-text">
               <p class="destinations-title">Moon</p>
 
               <p class="destination-description">
-                See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-                regain perspective and come back refreshed. While you’re there, take in some history
-                by visiting the Luna 2 and Apollo 11 landing sites.
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
               </p>
 
               <div class="distance-info d-flex">
@@ -51,15 +71,16 @@ export default {
           </div>
 
           <div id="destination-mars" class="item d-flex">
-
-            <div class="destination-img"><img src="../assets/destination/image-mars.png" alt=""></div>
+            <div class="destination-img">
+              <img src="../assets/destination/image-mars.png" alt="" />
+            </div>
             <div class="destination-text">
               <p class="destinations-title">Mars</p>
 
               <p class="destination-description">
-                Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
-                the tallest planetary mountain in our solar system. It’s two and a half times
-                the size of Everest!
+                Don’t forget to pack your hiking boots. You’ll need them to
+                tackle Olympus Mons, the tallest planetary mountain in our solar
+                system. It’s two and a half times the size of Everest!
               </p>
 
               <div class="distance-info d-flex">
@@ -77,15 +98,17 @@ export default {
           </div>
 
           <div id="destination-europa" class="item d-flex">
-            <div class="destination-img"><img src="../assets/destination/image-europa.png" alt=""></div>
+            <div class="destination-img">
+              <img src="../assets/destination/image-europa.png" alt="" />
+            </div>
             <div class="destination-text">
               <p class="destinations-title">Europa</p>
 
               <p class="destination-description">
-                The smallest of the four Galilean moons orbiting Jupiter, Europa is a
-                winter lover’s dream. With an icy surface, it’s perfect for a bit of
-                ice skating, curling, hockey, or simple relaxation in your snug
-                wintery cabin.
+                The smallest of the four Galilean moons orbiting Jupiter, Europa
+                is a winter lover’s dream. With an icy surface, it’s perfect for
+                a bit of ice skating, curling, hockey, or simple relaxation in
+                your snug wintery cabin.
               </p>
 
               <div class="distance-info d-flex">
@@ -103,15 +126,18 @@ export default {
           </div>
 
           <div id="destination-titan" class="item d-flex">
-            <div class="destination-img"><img src="../assets/destination/image-titan.png" alt=""></div>
+            <div class="destination-img">
+              <img src="../assets/destination/image-titan.png" alt="" />
+            </div>
 
             <div class="destination-text">
               <p class="destinations-title">Titan</p>
 
               <p class="destination-description">
-                The only moon known to have a dense atmosphere other than Earth, Titan
-                is a home away from home (just a few hundred degrees colder!). As a
-                bonus, you get striking views of the Rings of Saturn.
+                The only moon known to have a dense atmosphere other than Earth,
+                Titan is a home away from home (just a few hundred degrees
+                colder!). As a bonus, you get striking views of the Rings of
+                Saturn.
               </p>
 
               <div class="distance-info d-flex">
@@ -134,132 +160,130 @@ export default {
 </template>
 
 <style scoped>
-.page-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-left: 12.5%;
-}
+  .page-title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-left: 12.5%;
+  }
 
-#destinations-carousel {
-  position: relative;
-  width: 75%;
-  margin: auto;
-}
+  #destinations-carousel {
+    position: relative;
+    width: 75%;
+    margin: auto;
+  }
 
-#indicators {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-align: end;
-}
+  #indicators {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: end;
+  }
 
-#indicators a {
-  color: inherit;
-  text-decoration: none;
-  position: relative;
-  margin-left: 1.5rem;
-  cursor: pointer;
-  opacity: .6;
-  transition: all 0.3s;
-}
+  #indicators a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+  }
 
-#indicators a:hover {
-  opacity: 1;
-}
+  #indicators a:hover {
+    opacity: 1;
+  }
 
-#indicators a:hover::after {
-  content: '';
-  position: absolute;
-  bottom: -1.5rem;
-  left: 0;
-  right: 0;
-  height: 3px;
-  border-radius: 8px;
-  background-color: #fefefe;
-  opacity: 1;
-}
+  #indicators a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    opacity: 1;
+  }
 
-#carousel-items {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
+  #carousel-items {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
 
-#carousel-items::-webkit-scrollbar {
-  display: none;
-}
+  #carousel-items::-webkit-scrollbar {
+    display: none;
+  }
 
-.item {
-  min-width: 100%;
-  max-height: 100%;
-  gap: 3rem;
-  align-items: flex-start;
-}
+  .item {
+    min-width: 100%;
+    max-height: 100%;
+    gap: 3rem;
+    align-items: flex-start;
+  }
 
-.destination-img img {
-  height: 80%;
-}
+  .destination-img img {
+    height: 80%;
+  }
 
-.item .destination-text {
-  padding: 4rem;
-  padding-left: 6rem;
-}
+  .item .destination-text {
+    padding: 4rem;
+    padding-left: 6rem;
+  }
 
-.item .destinations-title {
-  font-family: 'Bellefair', sans-serif;
-  font-size: 100px;
-  text-transform: uppercase;
-  padding: 0;
-}
+  .item .destinations-title {
+    font-family: "Bellefair", sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 0;
+  }
 
-.destination-description {
-  position: relative;
-  text-align: justify;
-  padding-bottom: 1rem;
-  margin-right: 1rem;
-  font-family: 'Barlow', sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  opacity: 0.7;
-}
+  .destination-description {
+    position: relative;
+    text-align: justify;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0.7;
+  }
 
-.destination-description::after {
-  content: '';
-  position: absolute;
-  bottom: -.5rem;
-  left: 0;
-  right: 0;
-  height: 1px;
-  border-radius: 8px;
-  background-color: #fefefe;
-  opacity: .3;
-}
+  .destination-description::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    opacity: 0.3;
+  }
 
-.distance-info {
-  margin-top: 2rem;
-  gap: 5rem;
-}
+  .distance-info {
+    margin-top: 2rem;
+    gap: 5rem;
+  }
 
-.est-time,
-.avg-dist {
-  font-family: 'Barlow', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: .5rem;
-  opacity: .7;
-}
+  .est-time,
+  .avg-dist {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+  }
 
-.avg-dist-value,
-.time-est {
-  font-family: 'Bellefair', serif;
-  font-size: 26px;
-  text-transform: uppercase;
-}
-
-
+  .avg-dist-value,
+  .time-est {
+    font-family: "Bellefair", serif;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
 </style>
