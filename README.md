@@ -18,7 +18,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ### Disclaimer
 
-This is still a work in progress so for now you you'll have a better experience using the site on a desktop screen
+This is still a work in progress so for now you will have a better experience viewing the site on a desktop screen
 
 ### The challenge
 
