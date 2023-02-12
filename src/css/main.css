@@ -1,15 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import url(./navbar.css);
+@import url(./crew.css);
 @import url(./destinations.css);
 @import url(./technologies.css);
-
-:root {
-  --home-bg: "@/assets/home/background-home-desktop.jpg";
-  --crew-bg: "../assets/crew/background-crew-desktop.jpg";
-  --destination-bg: "../assets/crew/background-destination-desktop.jpg";
-  --technology-bg: "../assets/crew/background-technology-desktop.jpg";
-}
 
 *,
 *::before,
@@ -21,6 +15,10 @@
 
 body {
   color: #fefefe;
+}
+
+b {
+  opacity: 0.5;
 }
 
 /* HOME */

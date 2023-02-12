@@ -53,7 +53,11 @@ body {
   padding: 0.5rem;
 }
 
-.item img {
+.item .member-text {
+  align-self: center;
+}
+
+.crew-member img {
   height: 90%;
   width: 90%;
 }
@@ -78,8 +82,4 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-}
-
-b {
-  opacity: 0.5;
 }
