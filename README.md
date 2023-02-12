@@ -16,6 +16,10 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Overview
 
+### Disclaimer
+
+This is still a work in progress so for now you you'll have a better experience using the site on a desktop screen
+
 ### The challenge
 
 Users are able to:
