@@ -1,10 +1,8 @@
-/* NAVBAR */
 body {
-  position: relative !important;
+  position: relative;
 }
 
 .navbar {
-  align-items: center;
   justify-content: space-between;
   position: relative;
 }
@@ -13,8 +11,7 @@ body {
   content: "";
   position: absolute;
   top: 45%;
-  left: 3vw;
-  color: #fefefe;
+  left: -1vw;
   background-color: #fefefe;
   height: 1px;
   width: 40vw;
